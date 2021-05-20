@@ -11,6 +11,20 @@
 		9155C52E2655EA1500396E43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C52D2655EA1500396E43 /* ContentView.swift */; };
 		9155C5302655EA1600396E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9155C52F2655EA1600396E43 /* Assets.xcassets */; };
 		9155C5332655EA1600396E43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9155C5322655EA1600396E43 /* Preview Assets.xcassets */; };
+		9155C53C2655EA4900396E43 /* Panadapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C53B2655EA4900396E43 /* Panadapter.swift */; };
+		9155C53E2655EA7900396E43 /* FrequencyLegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C53D2655EA7900396E43 /* FrequencyLegend.swift */; };
+		9155C5402655EAA400396E43 /* DbLegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C53F2655EAA400396E43 /* DbLegend.swift */; };
+		9155C5422655EAB900396E43 /* DbmLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5412655EAB900396E43 /* DbmLines.swift */; };
+		9155C5442655EACD00396E43 /* FrequencyLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5432655EACD00396E43 /* FrequencyLines.swift */; };
+		9155C5482655EB8400396E43 /* Waterfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5472655EB8400396E43 /* Waterfall.swift */; };
+		9155C54A2655EB9300396E43 /* WaterfallLegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5492655EB9300396E43 /* WaterfallLegend.swift */; };
+		9155C54C2655EBB400396E43 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C54B2655EBB400396E43 /* Buttons.swift */; };
+		9155C54E2655EBBF00396E43 /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C54D2655EBBF00396E43 /* Side.swift */; };
+		9155C5502655EBD800396E43 /* Bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C54F2655EBD800396E43 /* Bottom.swift */; };
+		9155C5522655ED1F00396E43 /* Panafall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5512655ED1F00396E43 /* Panafall.swift */; };
+		9155C5572655F7DB00396E43 /* WaterfallGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5562655F7DB00396E43 /* WaterfallGraphic.swift */; };
+		9155C5592656AE6900396E43 /* PanadapterGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5582656AE6900396E43 /* PanadapterGraphic.swift */; };
+		9155C55B2656B9E900396E43 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C55A2656B9E900396E43 /* Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +35,20 @@
 		9155C5322655EA1600396E43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9155C5342655EA1600396E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9155C5352655EA1600396E43 /* TestxSDRLayout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestxSDRLayout.entitlements; sourceTree = "<group>"; };
+		9155C53B2655EA4900396E43 /* Panadapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panadapter.swift; sourceTree = "<group>"; };
+		9155C53D2655EA7900396E43 /* FrequencyLegend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyLegend.swift; sourceTree = "<group>"; };
+		9155C53F2655EAA400396E43 /* DbLegend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbLegend.swift; sourceTree = "<group>"; };
+		9155C5412655EAB900396E43 /* DbmLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbmLines.swift; sourceTree = "<group>"; };
+		9155C5432655EACD00396E43 /* FrequencyLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyLines.swift; sourceTree = "<group>"; };
+		9155C5472655EB8400396E43 /* Waterfall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterfall.swift; sourceTree = "<group>"; };
+		9155C5492655EB9300396E43 /* WaterfallLegend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallLegend.swift; sourceTree = "<group>"; };
+		9155C54B2655EBB400396E43 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		9155C54D2655EBBF00396E43 /* Side.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
+		9155C54F2655EBD800396E43 /* Bottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottom.swift; sourceTree = "<group>"; };
+		9155C5512655ED1F00396E43 /* Panafall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panafall.swift; sourceTree = "<group>"; };
+		9155C5562655F7DB00396E43 /* WaterfallGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallGraphic.swift; sourceTree = "<group>"; };
+		9155C5582656AE6900396E43 /* PanadapterGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanadapterGraphic.swift; sourceTree = "<group>"; };
+		9155C55A2656B9E900396E43 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +82,14 @@
 			isa = PBXGroup;
 			children = (
 				9155C52B2655EA1500396E43 /* TestxSDRLayoutApp.swift */,
-				9155C52D2655EA1500396E43 /* ContentView.swift */,
+				9155C5462655EAF900396E43 /* Views */,
 				9155C52F2655EA1600396E43 /* Assets.xcassets */,
 				9155C5342655EA1600396E43 /* Info.plist */,
 				9155C5352655EA1600396E43 /* TestxSDRLayout.entitlements */,
 				9155C5312655EA1600396E43 /* Preview Content */,
+				9155C5532655ED2500396E43 /* Sub Views */,
+				9155C5452655EADD00396E43 /* Main Views */,
+				9155C55A2656B9E900396E43 /* Controller.swift */,
 			);
 			path = TestxSDRLayout;
 			sourceTree = "<group>";
@@ -69,6 +100,41 @@
 				9155C5322655EA1600396E43 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9155C5452655EADD00396E43 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				9155C54F2655EBD800396E43 /* Bottom.swift */,
+				9155C54B2655EBB400396E43 /* Buttons.swift */,
+				9155C53F2655EAA400396E43 /* DbLegend.swift */,
+				9155C5412655EAB900396E43 /* DbmLines.swift */,
+				9155C53D2655EA7900396E43 /* FrequencyLegend.swift */,
+				9155C5432655EACD00396E43 /* FrequencyLines.swift */,
+				9155C53B2655EA4900396E43 /* Panadapter.swift */,
+				9155C5582656AE6900396E43 /* PanadapterGraphic.swift */,
+				9155C54D2655EBBF00396E43 /* Side.swift */,
+				9155C5472655EB8400396E43 /* Waterfall.swift */,
+				9155C5562655F7DB00396E43 /* WaterfallGraphic.swift */,
+				9155C5492655EB9300396E43 /* WaterfallLegend.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		9155C5462655EAF900396E43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9155C52D2655EA1500396E43 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9155C5532655ED2500396E43 /* Sub Views */ = {
+			isa = PBXGroup;
+			children = (
+				9155C5512655ED1F00396E43 /* Panafall.swift */,
+			);
+			path = "Sub Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +206,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9155C53C2655EA4900396E43 /* Panadapter.swift in Sources */,
+				9155C53E2655EA7900396E43 /* FrequencyLegend.swift in Sources */,
+				9155C5522655ED1F00396E43 /* Panafall.swift in Sources */,
+				9155C5592656AE6900396E43 /* PanadapterGraphic.swift in Sources */,
 				9155C52E2655EA1500396E43 /* ContentView.swift in Sources */,
+				9155C54A2655EB9300396E43 /* WaterfallLegend.swift in Sources */,
+				9155C5442655EACD00396E43 /* FrequencyLines.swift in Sources */,
+				9155C54E2655EBBF00396E43 /* Side.swift in Sources */,
+				9155C5572655F7DB00396E43 /* WaterfallGraphic.swift in Sources */,
+				9155C54C2655EBB400396E43 /* Buttons.swift in Sources */,
+				9155C5482655EB8400396E43 /* Waterfall.swift in Sources */,
+				9155C5502655EBD800396E43 /* Bottom.swift in Sources */,
+				9155C5422655EAB900396E43 /* DbmLines.swift in Sources */,
 				9155C52C2655EA1500396E43 /* TestxSDRLayoutApp.swift in Sources */,
+				9155C5402655EAA400396E43 /* DbLegend.swift in Sources */,
+				9155C55B2656B9E900396E43 /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +361,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.TestxSDRLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -305,6 +386,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.TestxSDRLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
