@@ -15,10 +15,15 @@ struct FrequencyLegend: View {
     @State var enabled = false
 
     var body: some View {
-        HStack(spacing: 0) {
-            Button("Frequency Legend") { enabled.toggle() }.foregroundColor(Color(.magenta))
+        GeometryReader { geo in
+            HStack(spacing: 0) {
+                Spacer()
+                Button("Frequency Legend (\(Int(geo.size.height)) x \(Int(geo.size.width)))") { enabled.toggle() }.foregroundColor(Color(.magenta))
+                Spacer()
+            }
         }
-        .frame(minWidth: 800 + 30, maxWidth: .infinity, minHeight: 20, maxHeight: 20)
+        .frame(minWidth: 600 + 30, maxWidth: .infinity, minHeight: 20, maxHeight: 20)
+
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.magenta)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.magenta).opacity(0.2)) }
     }

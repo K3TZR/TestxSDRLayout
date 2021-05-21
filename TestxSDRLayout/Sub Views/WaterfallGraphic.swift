@@ -15,10 +15,18 @@ struct WaterfallGraphic: View {
     @State var enabled = false
 
     var body: some View {
-        VStack {
-            Button("Waterfall Graphic") { enabled.toggle() }.foregroundColor(Color(.blue))
+        GeometryReader { geo in
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button("Waterfall Graphic (\(Int(geo.size.height)) x \(Int(geo.size.width)))") { enabled.toggle() }.foregroundColor(Color(.blue))
+                    Spacer()
+                }
+                Spacer()
+            }
         }
-        .frame(minWidth: 800, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.blue)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.blue).opacity(0.2)) }
     }

@@ -10,18 +10,23 @@ import SwiftUI
 struct Panadapter: View {
 
     var body: some View {
-        VStack(spacing: 0) {
-            HStack(spacing: 0) {
-                ZStack {
-                    FrequencyLines()
-                    DbmLines()
-                    PanadapterGraphic()
+//        GeometryReader { geo in
+
+            VStack(spacing: 0) {
+                HStack(spacing: 0) {
+                    ZStack {
+                        FrequencyLines()
+                        DbmLines()
+//                        PanadapterGraphic(height: geo.size.height, width: geo.size.width)
+                        PanadapterGraphic()
+                    }
+                    DbLegend()
                 }
-                DbLegend()
+                FrequencyLegend()
             }
-            FrequencyLegend()
-        }
-        .frame(minWidth: 800, maxWidth: .infinity, minHeight: 400 + 20, maxHeight: .infinity)
+            .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200 + 20, maxHeight: .infinity)
+//        }
+
     }
 }
 

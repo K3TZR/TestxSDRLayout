@@ -15,11 +15,13 @@ struct FrequencyLines: View {
     @State var enabled = false
     
     var body: some View {
-        HStack {
-            Button("FrequencyLines ---->") { enabled.toggle() }.foregroundColor(Color(.yellow))
-            Spacer()
+        GeometryReader { geo in
+            HStack {
+                Button("FrequencyLines (\(Int(geo.size.height)) x \(Int(geo.size.width)))") { enabled.toggle() }.foregroundColor(Color(.yellow))
+                Spacer()
+            }
         }
-        .frame(minWidth: 800, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.yellow)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.yellow).opacity(0.2)) }
     }

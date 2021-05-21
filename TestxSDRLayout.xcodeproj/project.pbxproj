@@ -24,6 +24,7 @@
 		9155C5522655ED1F00396E43 /* Panafall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5512655ED1F00396E43 /* Panafall.swift */; };
 		9155C5572655F7DB00396E43 /* WaterfallGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5562655F7DB00396E43 /* WaterfallGraphic.swift */; };
 		9155C5592656AE6900396E43 /* PanadapterGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5582656AE6900396E43 /* PanadapterGraphic.swift */; };
+		91845316265830B900556261 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91845315265830B900556261 /* AppExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		9155C5512655ED1F00396E43 /* Panafall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panafall.swift; sourceTree = "<group>"; };
 		9155C5562655F7DB00396E43 /* WaterfallGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallGraphic.swift; sourceTree = "<group>"; };
 		9155C5582656AE6900396E43 /* PanadapterGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanadapterGraphic.swift; sourceTree = "<group>"; };
+		91845315265830B900556261 /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				9155C5352655EA1600396E43 /* TestxSDRLayout.entitlements */,
 				9155C5312655EA1600396E43 /* Preview Content */,
 				9155C5452655EADD00396E43 /* Sub Views */,
+				91845315265830B900556261 /* AppExtensions.swift */,
 			);
 			path = TestxSDRLayout;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				9155C5422655EAB900396E43 /* DbmLines.swift in Sources */,
 				9155C52C2655EA1500396E43 /* TestxSDRLayoutApp.swift in Sources */,
 				9155C5402655EAA400396E43 /* DbLegend.swift in Sources */,
+				91845316265830B900556261 /* AppExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +353,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.TestxSDRLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -374,7 +378,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.TestxSDRLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

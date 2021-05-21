@@ -13,6 +13,7 @@ struct TestxSDRLayoutApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .navigationTitle("TestxSDRLayout " + Version().string)
         }
         .windowToolbarStyle(ExpandedWindowToolbarStyle())
     }

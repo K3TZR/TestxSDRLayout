@@ -18,7 +18,7 @@ struct WaterfallLegend: View {
         VStack {
             Button("WF Legend") { enabled.toggle() }.frame(width: 200).rotationEffect(.degrees(90)).foregroundColor(Color(.cyan))
         }
-        .frame(minWidth: 30, maxWidth: 30, minHeight: 400, maxHeight: .infinity)
+        .frame(minWidth: 30, maxWidth: 30, minHeight: 200, maxHeight: .infinity)
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.cyan)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.cyan).opacity(0.2)) }
     }

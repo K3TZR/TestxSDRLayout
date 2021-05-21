@@ -9,12 +9,20 @@ import SwiftUI
 
 struct Panafall: View {
 
+    @AppStorage("showBorder") var showBorder = false
+    @AppStorage("allEnabled") var allEnabled = false
+
+    @State var enabled = false
+
     var body: some View {
-        VStack(spacing: 0) {
+        VSplitView {
             Panadapter()
             Waterfall()
         }
-        .frame(minWidth: 800, maxWidth: .infinity, minHeight: 820, maxHeight: .infinity)
+        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 420, maxHeight: .infinity)
+        .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.textColor)) }
+        .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.textColor).opacity(0.2)) }
+        
     }
 }
 

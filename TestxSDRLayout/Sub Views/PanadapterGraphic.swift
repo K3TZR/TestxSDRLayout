@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PanadapterGraphic: View {
+//    let height: CGFloat
+//    let width: CGFloat
 
     @AppStorage("showBorder") var showBorder = false
     @AppStorage("allEnabled") var allEnabled = false
@@ -15,10 +17,18 @@ struct PanadapterGraphic: View {
     @State var enabled = false
 
     var body: some View {
-        VStack {
-            Button("Panadapter Graphic") { enabled.toggle() }.foregroundColor(Color(.green))
+        GeometryReader { geo in
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button("Panadapter Graphic (\(Int(geo.size.height)) x \(Int(geo.size.width)))") { enabled.toggle() }.foregroundColor(Color(.green))
+                    Spacer()
+                }
+                Spacer()
+            }
         }
-        .frame(minWidth: 800, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.green)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.green).opacity(0.2)) }
     }
@@ -26,6 +36,7 @@ struct PanadapterGraphic: View {
 
 struct PanadapterGraphic_Previews: PreviewProvider {
     static var previews: some View {
+//        PanadapterGraphic(height: 200, width: 600)
         PanadapterGraphic()
     }
 }

@@ -16,7 +16,7 @@ struct Waterfall: View {
                 WaterfallLegend()
             }
         }
-        .frame(minWidth: 800, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
     }
 }
 

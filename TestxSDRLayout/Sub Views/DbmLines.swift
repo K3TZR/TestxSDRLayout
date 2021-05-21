@@ -15,15 +15,14 @@ struct DbmLines: View {
     @State var enabled = false
     
     var body: some View {
-        VStack {
-            Button("DbmLines") { enabled.toggle() }.foregroundColor(Color(.textColor))
-            Text("|")
-            Text("|")
-            Text("|")
-            Text("|")
-           Spacer()
+        GeometryReader { geo in
+            HStack {
+                Spacer()
+                Button("DbmLines (\(Int(geo.size.height)) x \(Int(geo.size.width)))") { enabled.toggle() }.foregroundColor(Color(.textColor))
+                Spacer()
+            }
         }
-        .frame(minWidth: 800, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.textColor)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.textColor).opacity(0.2)) }
     }

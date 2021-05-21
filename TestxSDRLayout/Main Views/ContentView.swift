@@ -23,7 +23,7 @@ struct ContentView: View {
             }
             Bottom()
 
-        }.frame(minWidth: 1030, maxWidth: .infinity, minHeight: 880, maxHeight: .infinity)
+        }.frame(minWidth: 810, maxWidth: .infinity, minHeight: 520, maxHeight: .infinity)
 
         .toolbar {
             ToolbarItemGroup(placement: .cancellationAction) {
