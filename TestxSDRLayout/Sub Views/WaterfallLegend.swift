@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct WaterfallLegend: View {
-    @ObservedObject var controller: Controller
+
+    @AppStorage("showBorder") var showBorder = false
+    @AppStorage("allEnabled") var allEnabled = false
 
     @State var enabled = false
     
@@ -17,13 +19,13 @@ struct WaterfallLegend: View {
             Button("WF Legend") { enabled.toggle() }.frame(width: 200).rotationEffect(.degrees(90)).foregroundColor(Color(.cyan))
         }
         .frame(minWidth: 30, maxWidth: 30, minHeight: 400, maxHeight: .infinity)
-        .if((controller.allEnabled || enabled) && controller.showBorder) { view in view.border(Color(.cyan)) }
-        .if((controller.allEnabled || enabled) && !controller.showBorder) { view in view.background(Color(.cyan).opacity(0.2)) }
+        .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.cyan)) }
+        .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.cyan).opacity(0.2)) }
     }
 }
 
 struct WaterfallLegend_Previews: PreviewProvider {
     static var previews: some View {
-        WaterfallLegend(controller: Controller())
+        WaterfallLegend()
     }
 }

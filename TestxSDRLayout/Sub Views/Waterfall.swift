@@ -8,23 +8,20 @@
 import SwiftUI
 
 struct Waterfall: View {
-    @ObservedObject var controller: Controller
 
     var body: some View {
-        (
-            VStack(spacing: 0) {
-                HStack(spacing: 0) {
-                    WaterfallGraphic(controller: controller)
-                    WaterfallLegend(controller: controller)
-                }
+        VStack(spacing: 0) {
+            HStack(spacing: 0) {
+                WaterfallGraphic()
+                WaterfallLegend()
             }
-        )
+        }
         .frame(minWidth: 800, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
     }
 }
 
 struct Waterfall_Previews: PreviewProvider {
     static var previews: some View {
-        Waterfall(controller: Controller())
+        Waterfall()
     }
 }

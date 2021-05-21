@@ -12,7 +12,8 @@ struct TestxSDRLayoutApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(controller: Controller())
+            ContentView()
         }
+        .windowToolbarStyle(ExpandedWindowToolbarStyle())
     }
 }

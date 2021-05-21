@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct Panadapter: View {
-    @ObservedObject var controller: Controller
 
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 0) {
                 ZStack {
-                    FrequencyLines(controller: controller)
-                    DbmLines(controller: controller)
-                    PanadapterGraphic(controller: controller)
+                    FrequencyLines()
+                    DbmLines()
+                    PanadapterGraphic()
                 }
-                DbLegend(controller: controller)
+                DbLegend()
             }
-            FrequencyLegend(controller: controller)
+            FrequencyLegend()
         }
         .frame(minWidth: 800, maxWidth: .infinity, minHeight: 400 + 20, maxHeight: .infinity)
     }
@@ -28,6 +27,6 @@ struct Panadapter: View {
 
 struct PanadapterView_Previews: PreviewProvider {
     static var previews: some View {
-        Panadapter(controller: Controller())
+        Panadapter()
     }
 }

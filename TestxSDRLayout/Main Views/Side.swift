@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Side: View {
-    @ObservedObject var controller: Controller
+
+    @AppStorage("showBorder") var showBorder = false
+    @AppStorage("allEnabled") var allEnabled = false
 
     @State var enabled = false
 
@@ -17,14 +19,14 @@ struct Side: View {
             Button("Side") { enabled.toggle() }.foregroundColor(Color(.red))
         }
         .frame(minWidth: 120, maxWidth: 120, minHeight: 820, maxHeight: .infinity)
-        .if((controller.allEnabled || enabled) && controller.showBorder) { view in view.border(Color(.red)) }
-        .if((controller.allEnabled || enabled) && !controller.showBorder) { view in view.background(Color(.red).opacity(0.2)) }
+        .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.red)) }
+        .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.red).opacity(0.2)) }
     }
 }
 
 struct Side_Previews: PreviewProvider {
     static var previews: some View {
-        Side(controller: Controller())
+        Side()
     }
 }
 

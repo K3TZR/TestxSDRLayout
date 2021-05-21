@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct FrequencyLegend: View {
-    @ObservedObject var controller: Controller
+
+    @AppStorage("showBorder") var showBorder = false
+    @AppStorage("allEnabled") var allEnabled = false
 
     @State var enabled = false
 
@@ -17,13 +19,13 @@ struct FrequencyLegend: View {
             Button("Frequency Legend") { enabled.toggle() }.foregroundColor(Color(.magenta))
         }
         .frame(minWidth: 800 + 30, maxWidth: .infinity, minHeight: 20, maxHeight: 20)
-        .if((controller.allEnabled || enabled) && controller.showBorder) { view in view.border(Color(.magenta)) }
-        .if((controller.allEnabled || enabled) && !controller.showBorder) { view in view.background(Color(.magenta).opacity(0.2)) }
+        .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.magenta)) }
+        .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.magenta).opacity(0.2)) }
     }
 }
 
 struct FrequencyLegend_Previews: PreviewProvider {
     static var previews: some View {
-        FrequencyLegend(controller: Controller())
+        FrequencyLegend()
     }
 }
