@@ -24,7 +24,7 @@ struct Panadapter: View {
                 }
                 FrequencyLegend()
             }
-            .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200 + 20, maxHeight: .infinity)
+            .frame(minWidth: 400, maxWidth: .infinity, minHeight: 100 + 20, maxHeight: .infinity)
 //        }
 
     }

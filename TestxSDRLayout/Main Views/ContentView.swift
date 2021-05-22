@@ -13,17 +13,16 @@ struct ContentView: View {
     @AppStorage("allEnabled") var allEnabled = false
     @AppStorage("ShowButtons") var showButtons = false
     @AppStorage("ShowSide") var showSide = false
+    @AppStorage("numberOfPanadapters") var numberOfPanadapters = 0
 
     var body: some View {
-        VStack(spacing: 0) {
-            HStack(spacing: 0) {
-                if showButtons { Buttons() }
-                Panafall()
-                if showSide { Side() }
+        HStack {
+            VSplitView {
+                Panafalls()
+                Bottom()
             }
-            Bottom()
-
-        }.frame(minWidth: 810, maxWidth: .infinity, minHeight: 520, maxHeight: .infinity)
+            if showSide { Side() }
+        }.frame(minWidth: 610, maxWidth: .infinity, minHeight: 250, maxHeight: .infinity)
 
         .toolbar {
             ToolbarItemGroup(placement: .cancellationAction) {
@@ -36,6 +35,7 @@ struct ContentView: View {
                         }
                     })
                     Spacer()
+                    Button("+Pan") { numberOfPanadapters = (numberOfPanadapters + 1) % 4 }
                     Button("Border / Color") { showBorder.toggle() }
                     Button("Toggle All") { allEnabled.toggle() }
 
@@ -53,6 +53,7 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
         ContentView()
     }

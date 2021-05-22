@@ -21,10 +21,11 @@
 		9155C54C2655EBB400396E43 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C54B2655EBB400396E43 /* Buttons.swift */; };
 		9155C54E2655EBBF00396E43 /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C54D2655EBBF00396E43 /* Side.swift */; };
 		9155C5502655EBD800396E43 /* Bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C54F2655EBD800396E43 /* Bottom.swift */; };
-		9155C5522655ED1F00396E43 /* Panafall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5512655ED1F00396E43 /* Panafall.swift */; };
+		9155C5522655ED1F00396E43 /* Panafalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5512655ED1F00396E43 /* Panafalls.swift */; };
 		9155C5572655F7DB00396E43 /* WaterfallGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5562655F7DB00396E43 /* WaterfallGraphic.swift */; };
 		9155C5592656AE6900396E43 /* PanadapterGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155C5582656AE6900396E43 /* PanadapterGraphic.swift */; };
 		91845316265830B900556261 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91845315265830B900556261 /* AppExtensions.swift */; };
+		9184531826587EE000556261 /* Panafall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184531726587EE000556261 /* Panafall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,10 +46,11 @@
 		9155C54B2655EBB400396E43 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		9155C54D2655EBBF00396E43 /* Side.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
 		9155C54F2655EBD800396E43 /* Bottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottom.swift; sourceTree = "<group>"; };
-		9155C5512655ED1F00396E43 /* Panafall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panafall.swift; sourceTree = "<group>"; };
+		9155C5512655ED1F00396E43 /* Panafalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panafalls.swift; sourceTree = "<group>"; };
 		9155C5562655F7DB00396E43 /* WaterfallGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallGraphic.swift; sourceTree = "<group>"; };
 		9155C5582656AE6900396E43 /* PanadapterGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanadapterGraphic.swift; sourceTree = "<group>"; };
 		91845315265830B900556261 /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		9184531726587EE000556261 /* Panafall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panafall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +122,12 @@
 		9155C5462655EAF900396E43 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
-				9155C52D2655EA1500396E43 /* ContentView.swift */,
-				9155C5512655ED1F00396E43 /* Panafall.swift */,
-				9155C54D2655EBBF00396E43 /* Side.swift */,
-				9155C54B2655EBB400396E43 /* Buttons.swift */,
 				9155C54F2655EBD800396E43 /* Bottom.swift */,
+				9155C54B2655EBB400396E43 /* Buttons.swift */,
+				9155C52D2655EA1500396E43 /* ContentView.swift */,
+				9184531726587EE000556261 /* Panafall.swift */,
+				9155C5512655ED1F00396E43 /* Panafalls.swift */,
+				9155C54D2655EBBF00396E43 /* Side.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -200,13 +203,14 @@
 			files = (
 				9155C53C2655EA4900396E43 /* Panadapter.swift in Sources */,
 				9155C53E2655EA7900396E43 /* FrequencyLegend.swift in Sources */,
-				9155C5522655ED1F00396E43 /* Panafall.swift in Sources */,
+				9155C5522655ED1F00396E43 /* Panafalls.swift in Sources */,
 				9155C5592656AE6900396E43 /* PanadapterGraphic.swift in Sources */,
 				9155C52E2655EA1500396E43 /* ContentView.swift in Sources */,
 				9155C54A2655EB9300396E43 /* WaterfallLegend.swift in Sources */,
 				9155C5442655EACD00396E43 /* FrequencyLines.swift in Sources */,
 				9155C54E2655EBBF00396E43 /* Side.swift in Sources */,
 				9155C5572655F7DB00396E43 /* WaterfallGraphic.swift in Sources */,
+				9184531826587EE000556261 /* Panafall.swift in Sources */,
 				9155C54C2655EBB400396E43 /* Buttons.swift in Sources */,
 				9155C5482655EB8400396E43 /* Waterfall.swift in Sources */,
 				9155C5502655EBD800396E43 /* Bottom.swift in Sources */,
@@ -353,7 +357,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.TestxSDRLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -378,7 +382,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.TestxSDRLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -26,7 +26,7 @@ struct WaterfallGraphic: View {
                 Spacer()
             }
         }
-        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
+        .frame(minWidth: 400, maxWidth: .infinity, minHeight: 50, maxHeight: .infinity)
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.blue)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.blue).opacity(0.2)) }
     }

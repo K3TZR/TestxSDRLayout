@@ -22,7 +22,7 @@ struct FrequencyLegend: View {
                 Spacer()
             }
         }
-        .frame(minWidth: 600 + 30, maxWidth: .infinity, minHeight: 20, maxHeight: 20)
+        .frame(minWidth: 400 + 30, maxWidth: .infinity, minHeight: 20, maxHeight: 20)
 
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.magenta)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.magenta).opacity(0.2)) }

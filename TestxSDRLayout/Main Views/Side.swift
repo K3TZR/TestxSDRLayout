@@ -22,7 +22,7 @@ struct Side: View {
                 Spacer()
             }
         }
-        .frame(minWidth: 120, maxWidth: 120, minHeight: 420, maxHeight: .infinity)
+        .frame(minWidth: 120, maxWidth: 120, minHeight: 170, maxHeight: .infinity)
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.red)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.red).opacity(0.2)) }
     }

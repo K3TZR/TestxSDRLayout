@@ -28,7 +28,7 @@ struct PanadapterGraphic: View {
                 Spacer()
             }
         }
-        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
+        .frame(minWidth: 400, maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
         .if((allEnabled || enabled) && showBorder) { view in view.border(Color(.green)) }
         .if((allEnabled || enabled) && !showBorder) { view in view.background(Color(.green).opacity(0.2)) }
     }
